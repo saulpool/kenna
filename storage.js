@@ -75,7 +75,9 @@ function clearData() {
   }
 }
 
-// Export functions
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { getData, saveData, getSection, saveSection, clearData };
-}
+// Export functions to global scope for browser
+window.getData = getData;
+window.saveData = saveData;
+window.getSection = getSection;
+window.saveSection = saveSection;
+window.clearData = clearData;
