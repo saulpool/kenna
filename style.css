@@ -1,0 +1,325 @@
+/* Pomodoro Pet PWA Styles */
+/* Compact, minimalist design optimized for small windows */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #1a1a2e;
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 400px;
+  background: #16213e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Timer Section */
+.timer-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timer-display {
+  font-size: 48px;
+  font-weight: bold;
+  color: #e94560;
+  margin-bottom: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.mode-display {
+  font-size: 18px;
+  margin-bottom: 8px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.mode-focus {
+  background: #e94560;
+  color: white;
+}
+
+.mode-break {
+  background: #0f3460;
+  color: #4cc9f0;
+}
+
+.cycle-display {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: #e94560;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #d63d56;
+}
+
+.btn-secondary {
+  background: #0f3460;
+  color: #4cc9f0;
+}
+
+.btn-secondary:hover {
+  background: #1a4570;
+}
+
+.btn-icon {
+  background: #0f3460;
+  color: #4cc9f0;
+  padding: 10px 14px;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* Settings Dropdown */
+.settings-dropdown {
+  position: relative;
+  background: #1a1a2e;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #0f3460;
+}
+
+.settings-dropdown.hidden {
+  display: none;
+}
+
+.settings-section {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #0f3460;
+}
+
+.settings-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.settings-section h3 {
+  font-size: 14px;
+  color: #4cc9f0;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.input-group label {
+  font-size: 12px;
+  color: #888;
+  min-width: 80px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #0f3460;
+  border-radius: 4px;
+  background: #16213e;
+  color: #eee;
+  font-size: 12px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #4cc9f0;
+}
+
+/* Favorites */
+.favorites-list {
+  margin-bottom: 10px;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background: #16213e;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.favorite-item span {
+  flex: 1;
+}
+
+.favorite-item button {
+  margin-left: 6px;
+  padding: 4px 8px;
+  font-size: 10px;
+}
+
+.add-favorite {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.add-favorite input {
+  flex: 1;
+  min-width: 60px;
+  padding: 6px 10px;
+  border: 1px solid #0f3460;
+  border-radius: 4px;
+  background: #16213e;
+  color: #eee;
+  font-size: 12px;
+}
+
+/* Reminders Section */
+.reminders-section {
+  margin-bottom: 20px;
+}
+
+.reminders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reminders-header h2 {
+  font-size: 16px;
+  color: #4cc9f0;
+}
+
+.reminders-list {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.reminders-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.reminders-list::-webkit-scrollbar-track {
+  background: #16213e;
+}
+
+.reminders-list::-webkit-scrollbar-thumb {
+  background: #0f3460;
+  border-radius: 3px;
+}
+
+.reminder-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #1a1a2e;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.reminder-text {
+  flex: 1;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.reminder-actions {
+  display: flex;
+  gap: 6px;
+  margin-left: 10px;
+}
+
+.reminder-actions button {
+  padding: 4px 8px;
+  font-size: 10px;
+}
+
+.empty-reminders {
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+  padding: 20px;
+}
+
+/* Pet Section */
+.pet-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #1a1a2e;
+  border-radius: 8px;
+}
+
+.pet-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 350px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .timer-display {
+    font-size: 36px;
+  }
+
+  .pet-image {
+    width: 100px;
+    height: 100px;
+  }
+}
