@@ -267,7 +267,7 @@ class App {
 
   registerServiceWorker() {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
+      navigator.serviceWorker.register('sw.js')
         .then(registration => console.log('Service Worker registered'))
         .catch(error => console.log('Service Worker registration failed:', error));
     }
@@ -276,5 +276,11 @@ class App {
 
 // Initialize app when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-  new App();
+  try {
+    console.log('Initializing app...');
+    new App();
+    console.log('App initialized successfully');
+  } catch (error) {
+    console.error('Error initializing app:', error);
+  }
 });
