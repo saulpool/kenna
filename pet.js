@@ -51,7 +51,9 @@ class Pet {
   }
 
   getImagePath(position) {
-    return `/images/${position}.png`;
+    const path = `images/${position}.png`;
+    console.log('Pet image path:', path);
+    return path;
   }
 
   setPosition(position) {
