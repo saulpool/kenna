@@ -9,7 +9,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background: #1a1a2e;
+  background: #FFFFFF;
   color: #eee;
   min-height: 100vh;
   display: flex;
@@ -49,13 +49,13 @@ body {
 }
 
 .mode-focus {
-  background: #e94560;
+  background: #FFFFFF;
   color: white;
 }
 
 .mode-break {
-  background: #0f3460;
-  color: #4cc9f0;
+  background: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .cycle-display {
@@ -90,26 +90,26 @@ body {
 }
 
 .btn-primary {
-  background: #e94560;
+  background: #FFFFFF;
   color: white;
 }
 
 .btn-primary:hover {
-  background: #d63d56;
+  background: #FFFFFF;
 }
 
 .btn-secondary {
-  background: #0f3460;
-  color: #4cc9f0;
+  background: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .btn-secondary:hover {
-  background: #1a4570;
+  background: #FFFFFF;
 }
 
 .btn-icon {
-  background: #0f3460;
-  color: #4cc9f0;
+  background: #FFFFFF;
+  color: #FFFFFF;
   padding: 10px 14px;
 }
 
@@ -146,7 +146,7 @@ body {
 
 .settings-section h3 {
   font-size: 14px;
-  color: #4cc9f0;
+  color: #FFFFFF;
   margin-bottom: 10px;
 }
 
@@ -168,7 +168,7 @@ body {
   padding: 6px 10px;
   border: 1px solid #0f3460;
   border-radius: 4px;
-  background: #16213e;
+  background: #FFFFFF;
   color: #eee;
   font-size: 12px;
 }
@@ -188,7 +188,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 8px;
-  background: #16213e;
+  background: #FFFFFF;
   border-radius: 4px;
   margin-bottom: 6px;
   font-size: 12px;
@@ -216,7 +216,7 @@ body {
   padding: 6px 10px;
   border: 1px solid #0f3460;
   border-radius: 4px;
-  background: #16213e;
+  background: #FFFFFF;
   color: #eee;
   font-size: 12px;
 }
@@ -235,7 +235,7 @@ body {
 
 .reminders-header h2 {
   font-size: 16px;
-  color: #4cc9f0;
+  color: #FFFFFF;
 }
 
 .reminders-list {
@@ -248,11 +248,11 @@ body {
 }
 
 .reminders-list::-webkit-scrollbar-track {
-  background: #16213e;
+  background: #FFFFFF;
 }
 
 .reminders-list::-webkit-scrollbar-thumb {
-  background: #0f3460;
+  background: #FFFFFF;
   border-radius: 3px;
 }
 
@@ -261,7 +261,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background: #1a1a2e;
+  background: #FFFFFF;
   border-radius: 6px;
   margin-bottom: 8px;
 }
@@ -296,7 +296,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: #1a1a2e;
+  background: #FFFFFF;
   border-radius: 8px;
 }
 
